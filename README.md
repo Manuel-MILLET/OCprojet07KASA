@@ -1,5 +1,5 @@
 # Projet 07 OpenClassrooms agence immobilière "KASA"
-par Manuel MILLET novemebre 2022
+par Manuel MILLET novembre 2022
 
 # Getting Started with Create React App
 

@@ -1,0 +1,18 @@
+/*  Projet OpenClassrooms n°07
+    Agence immobilière KASA
+    par Manuel MILLET 10 novembre 12h00
+*/
+// selection des marges gauche et droite # pour les écrans PC - TABLETTES et MOBILES
+.mainPage {
+    margin: 0px 100px;
+    @include media-query(smal) {
+        margin: 0px 2%;
+    }
+    @include media-query(medium) {
+        margin: 0px 5%;
+    }
+}
+
+.tst {
+    color: black;
+}
