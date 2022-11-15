@@ -1,11 +1,11 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 11 novembre 19h00
+    par Manuel MILLET 15 novembre 19h00
 */
 import React from 'react'
 import styled from 'styled-components'
-import FooterLogo from '../../assets/logofooter-kasa-white.png'
 import colors from '../../styles/colors'
+import FooterLogo from '../../assets/logofooter-kasa-white.png'
 
 const FooterContainer = styled.footer`
     display: flex;
@@ -13,18 +13,17 @@ const FooterContainer = styled.footer`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 180px;
+    height: 209px;
     color: ${colors.white};
     background: ${colors.black};
     margin-top: 45px;
     padding-top: 45px;
 `
 
-const FooterText = styled.p`
+const FooterText = styled.span`
     color: ${colors.white};
-    height: 60px;
-    margin: 5px 2px 6px 2px;
-    padding: 5px 2px 6px 2px;
+    margin: 35px 0;
+    padding: 0;
     font-size: 25px;
 `
 
@@ -33,27 +32,9 @@ function Footer() {
     return (
         <FooterContainer>
             <img src={FooterLogo} alt="logo de l'agence KASA en blanc" />
-            <FooterText>
-                <p>&copy;{effectiveYear} Kasa. All rights reserved</p>
-            </FooterText>
+            <FooterText>&copy;{effectiveYear} Kasa. All rights reserved</FooterText>
         </FooterContainer>
     )
   }
   
   export default Footer
-
-/*
-const FooterContainer = styled.footer`
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background: black;
-    height: 209px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
-
-*/

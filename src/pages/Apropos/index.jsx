@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 11 novembre 19h00
+    par Manuel MILLET 15 novembre 19h00
 
 PAGE A PROPOS
 */
@@ -14,8 +14,6 @@ const txtfiabilite = citation.fiabilite
 const txtrespect = citation.respect
 const txtservice = citation.service
 const txtresponsabilite = citation.responsabilite
-
-
 
 const CitationWrapper = styled.section`
     display: flex;
@@ -65,6 +63,7 @@ function Apropos() {
     return (
         <main>
             <BannerApropos />
+            <section>
             <CitationWrapper>
                 <BoutonAcc>Fiabilité</BoutonAcc>
                 <MentionsTexte>{txtfiabilite}</MentionsTexte>
@@ -75,6 +74,7 @@ function Apropos() {
                 <BoutonAcc>Responsabilité</BoutonAcc>
                 <MentionsTexte>{txtresponsabilite}</MentionsTexte>
             </CitationWrapper>
+            </section>
         </main>
     )
 }

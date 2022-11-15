@@ -23,8 +23,8 @@ const HomeWrapper = styled.section`
 function Accueil() {
     return (
         <main>
-            <BannerAccueil />
             <HomeWrapper>
+                <BannerAccueil />
                 <ListeAppartements />
             </HomeWrapper>
         </main>

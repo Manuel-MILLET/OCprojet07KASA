@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 13 novembre 19h00
+    par Manuel MILLET 15 novembre 19h00
 */
 
 import React from 'react'
@@ -13,7 +13,6 @@ const FicheContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 20%;
     height: 225px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -39,15 +38,15 @@ const TitreFiche = styled.h2`
 
 function Card({ image, title}) {
     return (
-        <FicheContainer>
         <div>
-            <img src={image} alt="" />
+        <FicheContainer>
+                <img src={image} alt="" />
                 <Espace><div></div></Espace>
                 <TitreFiche>
                     <h2>{title}</h2>
                 </TitreFiche>
-        </div>
         </FicheContainer>  
+        </div>
     )
 }
 

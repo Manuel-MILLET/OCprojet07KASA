@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 10 novembre 12h00
+    par Manuel MILLET 15 novembre 19h00
 */
 
 import { createGlobalStyle } from 'styled-components';
@@ -12,10 +12,13 @@ const StyledGlobalStyle = createGlobalStyle`
 
   body {
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    background-color: 'white';
+    background-color: white;
     margin: 0;
     padding: 0;
-    max-width: 1450px;
+  }
+
+  div {
+    display: block;
   }
 
   a {
@@ -29,6 +32,17 @@ const StyledGlobalStyle = createGlobalStyle`
   img {
     object-fit: cover;
   }
+
+  #root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  } 
 `
 
 function GlobalStyle() {

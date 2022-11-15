@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 11 novembre 19h00
+    par Manuel MILLET 15 novembre 19h00
 
 PAGE FICHE LOGEMENT
 
@@ -19,14 +19,16 @@ const Wrapper = styled.div`
 function SingleProduct () {
     return (
         <main>
-            <Carousel />
-            <Wrapper>
-                <section>
+            <header>
+                <Carousel />
+            </header>
+            <section>
+                <Wrapper>
                     <div>
                         <h1>Pages produit simple</h1>
                     </div>
-                </section>
-            </Wrapper>
+                </Wrapper>
+            </section>
         </main>
     )
 }

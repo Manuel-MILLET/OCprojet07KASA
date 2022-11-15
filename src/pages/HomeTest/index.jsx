@@ -1,13 +1,20 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
     par Manuel MILLET 15 novembre 19h00
+
+TEST PAGE D'ACCUEIL
 */
 
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Card from '../Card/Card'
 import logements from '../../datas/logements.json'
+import Card from '../../components/Card/Card'
+/*
+import ListeAppartements from '../../components/appartements'
+import colors from '../../styles/colors'
+*/
+
 
 const SectionAppart = styled.section`
     display: flex;
@@ -15,13 +22,13 @@ const SectionAppart = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    aligitems: center;
+    align-items: center;
 `
 
-function Appartements () {
+function HomeTest() {
     return (
+        <SectionAppart>
         <section>
-            <SectionAppart>
             {logements.map((logements) => {
                 return (
                     <article>
@@ -31,9 +38,9 @@ function Appartements () {
                     </article>
                 )
                 })}
-            </SectionAppart>
         </section>
+        </SectionAppart>
     )
 }
 
-export default Appartements
+export default HomeTest
