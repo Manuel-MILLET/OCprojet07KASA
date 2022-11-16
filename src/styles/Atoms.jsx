@@ -26,9 +26,14 @@ export const Loader = styled.div`
   width: 0;
 `
 export const StyledLink = styled(Link)`
+  width: 309px;
+  height: 34px;
+  color: ${colors.redprimary};
+  font-family: 'Montserrat';
+  font-size: 24px;
+  line-height: 34.22px;
+  font-weight: 500;
+  text-align: right;
   padding: 10px 15px 10px 0;
-  color: red;
   text-decoration: none;
-  font-size: 18px;
-  text-align: center;
 `

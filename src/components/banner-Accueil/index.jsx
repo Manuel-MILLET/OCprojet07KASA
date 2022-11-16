@@ -12,22 +12,22 @@ const BannerHomeWrapper = styled.div`
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     align-items: center;
     max-width: 1920px;
     width: 100%;
-    height: 250px;
-    margin-bottom: 50px;
+    height: 223px;
+    margin-bottom: 30px;
 `
 const Illustration = styled.img`
     position: absolute;
     top: 0;
     left: 0;
+    width: 80%;
+    height: 223px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 90%;
-    height: 250px;
     border-radius: 25px;
 `
 
@@ -35,13 +35,14 @@ const slogan = citation.slogan
 
 const HomeSlogan = styled.h2`
     position: absolute;
-    top: 30%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%, -50%);
+    top: 24%;
+    left: 4%;
     color: ${colors.white};
-    font-size: 50px;
-    font-weight: 300;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 500;
+    width: 80%;
 `
 
 function BannerAccueil() {

@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 13 novembre 22h00
+    par Manuel MILLET 16 novembre  12h00
 
 PAGE D'ACCUEIL
 */
@@ -10,23 +10,38 @@ import BannerAccueil from '../../components/banner-Accueil'
 import ListeAppartements from '../../components/appartements'
 import colors from '../../styles/colors'
 
-const HomeWrapper = styled.section`
+const HomeWrapper = styled.main`
+    position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 1240px;
+`
+const GalleryWrapper = styled.section`
+    display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-color: ${colors.greylight};
+    background-color: ${colors.greyhyperlight};
     border-radius: 20px;
+    margin: 40px;
+    padding: 40px;
+    max-width: 1920px;
 `
 
 function Accueil() {
     return (
         <main>
-            <HomeWrapper>
-                <BannerAccueil />
-                <ListeAppartements />
-            </HomeWrapper>
+        <HomeWrapper>
+            <header>
+            <BannerAccueil />
+            </header>
+            <section>
+            <GalleryWrapper>
+                    <ListeAppartements />
+            </GalleryWrapper>  
+            </section>
+        </HomeWrapper>
         </main>
     )
 }

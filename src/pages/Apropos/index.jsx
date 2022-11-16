@@ -62,7 +62,9 @@ const MentionsTexte = styled.p`
 function Apropos() {
     return (
         <main>
+            <header>
             <BannerApropos />
+            </header>
             <section>
             <CitationWrapper>
                 <BoutonAcc>Fiabilité</BoutonAcc>

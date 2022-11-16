@@ -40,13 +40,15 @@ const ErrorTitle = styled.h1`
 
 function PageError() {
   return (
-    <section>
-    <ErrorWrapper>
-      <NumError>404</NumError>
-      <ErrorTitle>Oups !... La page que vous demandez n'existe pas.</ErrorTitle>
-      <StyledLink to="/">Retourner sur la page d'accueil</StyledLink>
-    </ErrorWrapper>
-    </section>
+    <main>
+      <section>
+        <ErrorWrapper>
+          <NumError>404</NumError>
+          <ErrorTitle>Oups !... La page que vous demandez n'existe pas.</ErrorTitle>
+          <StyledLink to="/">Retourner sur la page d'accueil</StyledLink>
+        </ErrorWrapper>
+      </section>
+    </main>
   )
 }
 

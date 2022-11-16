@@ -9,17 +9,20 @@ import styled from 'styled-components'
 import { StyledLink } from '../../styles/Atoms'
 import KasaLogo from '../../assets/logo-kasa.png'
 
-const HomeLogo = styled.img`
-    width: 200px;
-    height: 65px;
-`
-
 const HeaderContainer = styled.nav`
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    width: 84%;
+    height: 68px;
+    margin: 40px 100px;
     padding: 0;
+`
+
+const HomeLogo = styled.img`
+    width: 210.32px;
+    height: 68px;
 `
 
 function Header() {
