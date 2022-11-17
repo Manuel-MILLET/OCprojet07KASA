@@ -14,7 +14,8 @@ import SingleProduct from './pages/SingleProduct'
 import PageError from './pages/PageError'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import './styles/index.css'
+import './styles/Footer.css'
+import './styles/Index.css'
 
 ReactDOM.createRoot
 (document.getElementById('root')).render(

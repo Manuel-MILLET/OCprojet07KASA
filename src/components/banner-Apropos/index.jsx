@@ -3,36 +3,14 @@
     par Manuel MILLET 15 novembre 19h00
 */
 
-import styled from 'styled-components'
 import AproposIllustration from '../../assets/apropos.png'
-
-const BannerAproposWrapper = styled.div`
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    max-width: 1920px;
-    width: 100%;
-    margin-bottom: 50px;
-`
-
-const Illustration = styled.img`
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 5%;
-    width: 90%;
-    height: 250px;
-    border-radius: 25px;
-`
+import '../../styles/Banner-Apropos.css'
 
 function BannerApropos() {
     return (
-        <BannerAproposWrapper>
-            <Illustration src={AproposIllustration} />
-        </BannerAproposWrapper>
+        <div className='BannerAproposWrapper'>
+            <img className='IllustrationBannerApropos' src={AproposIllustration} alt='paysage de montagne' />
+        </div>
     )
 }
 
