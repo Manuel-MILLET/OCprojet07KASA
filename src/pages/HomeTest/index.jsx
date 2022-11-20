@@ -2,59 +2,59 @@
     Agence immobilière KASA
     par Manuel MILLET 16 novembre 12h00
 
-TEST PAGE D'ACCUEIL
 */
-
 import React from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import Card from '../../components/Card'
-import logements from '../../datas/logements.json'
-
-/*
-import ListeAppartements from '../../components/appartements'
-import colors from '../../styles/colors'
-*/
-
-const SectionAppart = styled.section`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-`
-
-const CardWrapper = styled.div`
-    position: relative;
-    margin: 10px;
-    border-radius: 15px;
-    overflow: hidden;
-    width: 340px;
-    height: 340px;
-`
+import { useParams } from 'react-router-dom'
+import products from '../../datas/datasLogements.json'
+import Carousel from '../../components/Carousel'
+import '../../styles/FicheLogement.css'
 
 function HomeTest() {
-    return (
-        <main>
-        <section>
-        <SectionAppart>
-            {logements.map((logements) => {
-                return (
-                    <article>
-                        <Link to={`/products/${logements.id}`}>
-                        <div>
-                            <CardWrapper>
-                                <Card image={logements.cover} title={logements.title} />
-                            </CardWrapper>
-                        </div>
-                        </Link>
-                    </article>
-                )
-            })}
-        </SectionAppart>
-        </section>
-        </main>
-    )
+  const { productId } = useParams();
+  const productID = products.find((product) => product.id === productId);
+  const titre = 'ici le nom de l appart !!';
+
+
+  return (
+    <main>
+    <Carousel />
+    <section>
+      <p>salut manu !!</p>
+      <p>{titre}</p>
+      <p>{productID}</p>
+
+    </section>
+
+    </main>
+)
 }
 
 export default HomeTest
+
+
+/*
+  const { cover, title, location, rating, host, equipments, description, pictures } =
+    product;
+
+
+          <div className="singleproduct__tags">
+            {product.tags.map((tag, index) => (
+              <Tags key={index} getTag={tag} />
+            ))}
+          </div>
+
+
+      <div className="singleproduct__rating-and-host">
+          <Rating rating={rating} />
+          <Host host={host} />
+      </div>
+
+
+    <section>
+      <div className="singleproduct__dropdowns">
+        <Collapse title="description" content={description} />
+        <Collapse title="équipement" content={equipments} />
+      </div>
+    </section>
+
+*/

@@ -3,20 +3,15 @@
     par Manuel MILLET 17 novembre 19h00
 */
 
-.SectionAppart {
+.Gallery-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.CardWrapper {
-    position: relative;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 340px;
-    height: 340px;
+    border-radius: 20px;
+    padding: 20px 0;
+    max-width: 1920px;
+    background-color: var(--greyhyperlight);
 }

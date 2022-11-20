@@ -8,9 +8,9 @@ import '../../styles/Banner-Apropos.css'
 
 function BannerApropos() {
     return (
-        <div className='BannerAproposWrapper'>
+        <section className='BannerAproposWrapper'>
             <img className='IllustrationBannerApropos' src={AproposIllustration} alt='paysage de montagne' />
-        </div>
+        </section>
     )
 }
 

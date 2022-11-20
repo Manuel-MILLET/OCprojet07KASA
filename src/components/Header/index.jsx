@@ -12,7 +12,7 @@ import '../../styles/Header.css'
 function Header() {
     return (
         <header className='HeaderContainer'>
-            <Link to="/"><img classeName='HomeLogo' src={KasaLogo} alt="logo de l'agence KASA" /></Link>
+            <Link to="/"><img className='HomeLogo' src={KasaLogo} alt="logo de l'agence KASA" /></Link>
                 <nav>
                 <StyledLink to="/">Accueil</StyledLink>
                 <StyledLink to="/apropos">A Propos</StyledLink>

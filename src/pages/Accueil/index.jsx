@@ -5,17 +5,16 @@
 PAGE D'ACCUEIL
 */
 import React from 'react'
-import BannerAccueil from '../../components/banner-Accueil'
-import ListeAppartements from '../../components/appartements'
+import BannerAccueil from '../../components/Banner-Accueil'
+import GalleryAppartments from '../../components/GalleryAppartments'
+
 import '../../styles/Accueil.css'
 
 function Accueil() {
     return (
-        <main className='home-wrapper'>
+        <main className='Home-wrapper'>
             <BannerAccueil />
-            <section className='gallery-wrapper'>
-                <ListeAppartements />
-            </section>
+            <GalleryAppartments />
         </main>
     )
 }

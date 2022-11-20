@@ -3,21 +3,9 @@
     par Manuel MILLET 17 novembre 19h00
 */
 
-.home-wrapper {
+.Home-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 1240px;
-}
-
-.gallery-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    padding: 40px 0;
-    max-width: 1920px;
-    background-color: var(--greyhyperlight);
 }

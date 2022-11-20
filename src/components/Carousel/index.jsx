@@ -5,13 +5,13 @@
     CAROUSEL
 */
 
-import TestIllustration from '../../assets/test.jpg'
+import React from 'react'
 import '../../styles/Carousel.css'
 
-function Carousel() {
+function Carousel({ image }) {
     return (
         <div className='CarouselWrapper'>
-            <img className='CarouselIllustration' src={TestIllustration} alt="appartement agence KASA" />
+            <img className='CarouselIllustration' src={ image } alt="appartement agence KASA" />
         </div>
     )
 }

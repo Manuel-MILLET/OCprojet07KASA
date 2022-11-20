@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 15 novembre 12h00
+    par Manuel MILLET 19 novembre 12h00
 */
 
 import React from 'react'
@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Apropos from './pages/Apropos'
 import HomeTest from './pages/HomeTest'
-import SingleProduct from './pages/SingleProduct'
+import FicheLogement from './pages/FicheLogement'
 import PageError from './pages/PageError'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -26,7 +26,7 @@ ReactDOM.createRoot
           <Route exact path="/" element={<Accueil />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/hometest" element={<HomeTest/>} />
-          <Route path="products/:productId" element={<SingleProduct />} />
+          <Route path="products/:productId" element={<FicheLogement />} />
           <Route path="*" element={<PageError />} />
         </Routes>
       <Footer />

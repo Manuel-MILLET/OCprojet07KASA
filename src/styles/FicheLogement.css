@@ -1,0 +1,128 @@
+/*  Projet OpenClassrooms n°07
+    Agence immobilière KASA
+    par Manuel MILLET 15 novembre 19h00
+
+CSS pour LA PAGE FICHE LOGEMENT
+*/
+
+main {
+    margin: 0 5%;
+    background-color: var(--white);
+}
+
+.block-primary {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.block-info {
+    width: 75%;
+
+    margin: 0;
+    padding: 0;
+    background-color:cornflowerblue;
+}
+
+.titreAppartement {
+    color: var(--redprimary);
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.location {
+    color: var(--redprimary);
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.tags-info {
+
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: flex-start;
+    margin: 0;
+    padding:0;
+}
+
+.block-host {
+    width: 25%;
+
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.block-secondary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.titre-secondary {
+    display: block;
+    width: auto;
+    height: 60px;
+    color: var(--white);
+    background-color: var(--redprimary);
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.text-secondary {
+    color: var(--redprimary);
+    background-color: var(--greyhyperlight);
+    display: block;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+    padding: 30px 20px;
+}
+
+.block-description-equipement {
+    width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .block-description-equipement {
+        width: 100%;
+        background-color: pink;
+    }
+
+    .block-primary {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .block-description-equipement {
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .block-primary {
+        height: 450px;
+    }
+}

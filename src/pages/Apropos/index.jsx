@@ -5,31 +5,24 @@
 PAGE A PROPOS
 */
 import React from 'react'
-import BannerApropos from '../../components/banner-Apropos'
-import citation from '../../datas/aboutExpressions'
+import BannerApropos from '../../components/Banner-Apropos'
+import Collapse from '../../components/Collapse'
 import '../../styles/Apropos.css'
+import ABOUT_EXPRESSIONS from '../../datas/Expressions'
 
-const txtfiabilite = citation.fiabilite
-const txtrespect = citation.respect
-const txtservice = citation.service
-const txtresponsabilite = citation.responsabilite
+const data = ABOUT_EXPRESSIONS;
 
 function Apropos() {
     return (
-        <main>
+        <main className='CitationWrapper'>
             <BannerApropos />
-            <section className='CitationWrapper'>
-                <button className='BoutonAcc'>Fiabilité</button>
-                <p className='MentionsTexte'>{txtfiabilite}</p>
-                <button className='BoutonAcc'>Respect</button>
-                <p className='MentionsTexte'>{txtrespect}</p>
-                <button className='BoutonAcc'>Service</button>
-                <p className='MentionsTexte'>{txtservice}</p>
-                <button className='BoutonAcc'>Responsabilité</button>
-                <p className='MentionsTexte'>{txtresponsabilite}</p>
-            </section>
+            <div>
+                {data.map(({ title, text }) => (
+                <Collapse key={`about-${title}`} title={title} textArray={[text]} />
+                ))}
+            </div>
         </main>
-    )
-}
-
+      )
+    }
+  
 export default Apropos

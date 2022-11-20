@@ -4,17 +4,17 @@
 */
 
 import HomeIllustration from '../../assets/banner-header-sombre.png'
-import citation from "../../datas/aboutExpressions"
+import citation from '../../datas/ListeExpressions'
 import '../../styles/Banner-Accueil.css'
 
 const slogan = citation.slogan
 
 function BannerAccueil() {
     return (
-        <div className='BannerHomeWrapper'>
+        <section className='BannerHomeWrapper'>
             <img className='IllustrationBannerAccueil' src={HomeIllustration} alt='paysage bord de mer' />
             <h1 className='HomeSlogan'>{slogan}</h1>
-        </div>
+        </section>
     )
 }
 
