@@ -1,27 +1,32 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 19 novembre 19h00
+    par Manuel MILLET 22 novembre 19h00
 */
 // RATING
 
-
-
 import React from 'react'
 import Redstar from '../../assets/redStar.svg'
-
+import Greystar from '../../assets/greyStar.svg'
 import '../../styles/Host.css'
 
 function Rating ({ rating }) {
+    const starsIndice = [1, 2, 3, 4, 5];
+
     return (
-        <div>
-            <img src={ Redstar } alt='étoile rouge'/>
+        <div className='host-star'>
+            {starsIndice.map((star) =>
+                rating >= star ? (
+                    <img className='size-star' key={star.toString()}
+                        src={ Redstar }
+                        alt='étoile rouge'/>
+                    ) : (
+                    <img className='size-star' key={star.toString()} 
+                        src={ Greystar } 
+                        alt='étoile grise'/>
+                )
+            )}
         </div>
     )
 }
 
 export default Rating
-
-/*
-import Greystar from '../../assets/greyStar.svg'
-            <img src={ Greystar }/>
-*/

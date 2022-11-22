@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 17 novembre 19h00
+    par Manuel MILLET 22 novembre 19h00
 */
 
 .CardContainer {
@@ -13,8 +13,14 @@
     height: 340px;
     border-radius: 15px;
     margin: 10px;
-    animation: fadeInUp 600ms ease-in-out;
     overflow: hidden;
+}
+
+.CardContainer:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+    transition: transform ease-in-out;
+    animation: fadeInUp 600ms ease-in-out;
 }
 
 .Thumb {

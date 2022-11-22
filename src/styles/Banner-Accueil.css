@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 17 novembre 19h00
+    par Manuel MILLET 22 novembre 19h00
 */
 
 .BannerHomeWrapper {
@@ -18,7 +18,7 @@
 
 .HomeSlogan {
     position: absolute;
-    top: 40%;
+    top: 30%;
     color: var(--white);
     background-color: transparent;
     text-align: center;

@@ -1,5 +1,8 @@
 # Projet 07 OpenClassrooms agence immobilière "KASA"
+
 par Manuel MILLET novembre 2022
+
+code source du projet OpenClassrooms n°07 "Développez une application web avec REACT et React Router" du parcours "Développeur web". 
 
 # Getting Started with Create React App
 
@@ -79,6 +82,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# OCprojet07KASA
-# OCprojet07KASA
-# agence immobilière KASA

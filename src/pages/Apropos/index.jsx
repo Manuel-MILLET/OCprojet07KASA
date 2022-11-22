@@ -1,9 +1,9 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 17 novembre 19h00
-
-PAGE A PROPOS
+    par Manuel MILLET 22 novembre 19h00
 */
+//PAGE A PROPOS
+
 import React from 'react'
 import BannerApropos from '../../components/Banner-Apropos'
 import Collapse from '../../components/Collapse'
@@ -22,7 +22,7 @@ function Apropos() {
                 ))}
             </div>
         </main>
-      )
-    }
+    )
+}
   
 export default Apropos

@@ -1,81 +1,83 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 18 novembre 19h00
+    par Manuel MILLET 22 novembre 19h00
 */
 
 .collapse {
-    max-width: 64rem;
-    margin: 2rem auto;
-    border-radius: 0.25rem;
-    background: var(--greyhyperlight);
+  max-width: 1023px;
+  margin: 32px auto;
+  border-radius: 5px;
+  background-color: var(--greyhyperlight);
+}
+  
+.collapse.is-close {
+  background-color: var(--white);
+}
+  
+.collapse-title,
+.collapse-text {
+  line-height: 32px;
+  font-size: 24px;
+}
+  
+.collapse-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 16px;
+  width: 1024px;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--redprimary);
+  cursor: pointer;
+}
+  
+.collapse-title span {
+  padding: 5px 0;
+}
+  
+.collapse-title i {
+  padding: 8px 16px;
+}
+  
+.collapse-text {
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  color: var(--redprimary);
+  font-weight: 400;
+  opacity: 1;
+  transition: 200ms;
+}
+  
+.collapse-text.is-close {
+  padding: 0 16px;
+  height: 0;
+  opacity: 0;
+}
+  
+@media screen and (max-width: 1440px) {
+  .collapse {
+    margin: 16px auto;
   }
   
-  .collapse.is-close {
-    background: white;
+  .collapse-title, .collapse-text {
+    line-height: 22px;
+    font-size: 16px;
   }
   
-  .collapse__title,
-  .collapse__text {
-    line-height: 2rem;
-    font-size: var(--h3-size);
+  .collapse-title span {
+    padding: 2px 0;
   }
   
-  .collapse__title {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: white;
-    background: var(--redprimary);
-    cursor: pointer;
+  .collapse-title i {
+    padding: 5px 0;
   }
   
-  .collapse__title span {
-    padding: 0.25rem 0;
+  .collapse-text {
+    padding: 16px;
   }
-  
-  .collapse__title i {
-    padding: 0.5rem 1rem;
-  }
-  
-  .collapse__text {
-    height: 100%;
-    margin: 0;
-    padding: 1.5rem;
-    overflow: hidden;
-    color: var(--redprimary);
-    font-weight: 400;
-    opacity: 1;
-    transition: 200ms;
-  }
-  
-  .collapse__text.is-close {
-    padding: 0 1rem;
-    height: 0;
-    opacity: 0;
-  }
-  
-  @media screen and (max-width: 81.75rem) {
-    .collapse {
-      margin: 1rem auto;
-    }
-  
-    .collapse__title,
-    .collapse__text {
-      line-height: 1.35rem;
-      font-size: var(--txt-size);
-    }
-  
-    .collapse__title span {
-      padding: 0.125rem 0;
-    }
-  
-    .collapse__title i {
-      padding: 0.25rem 0;
-    }
-  
-    .collapse__text {
-      padding: 1rem;
-    }
-  }
+}
