@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 22 novembre 19h00
+    par Manuel MILLET 24 novembre 19h00
 */
 //    CAROUSEL
 
@@ -23,6 +23,7 @@ function Carousel ({ slides }) {
     };
 
     return (
+        <section>
         <div className='CarouselWrapper'>
             {slides.map((picture, index) => {
                 return (
@@ -50,6 +51,7 @@ function Carousel ({ slides }) {
                 </>
             ) : null}
         </div>
+        </section>
     )
 }
 

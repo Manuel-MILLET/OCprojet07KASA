@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 22 novembre 19h00
+    par Manuel MILLET 24 novembre 19h00
 */
 //PAGE FICHE LOGEMENT
 
@@ -39,8 +39,12 @@ function FicheLogement () {
                     </div>
                 </div>
                 <div className='block-secondary'>{/* block dropdows description et &quipements  */}
-                    <Collapse title='Description' textArray={ [ description ] } />
-                    <Collapse title='Équipements' textArray={ equipments } />
+                    <div className='block-description-equipement'>           
+                        <Collapse title='Description' textArray={ [ description ] } />
+                    </div> 
+                    <div className='block-description-equipement'>
+                        <Collapse title='Équipements' textArray={ equipments } />
+                    </div> 
                 </div>
             </section>
         </main>

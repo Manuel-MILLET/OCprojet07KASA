@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 22 novembre 19h00
+    par Manuel MILLET 24 novembre 19h00
 */
 // Collapse
 
@@ -21,16 +21,18 @@ class Collapse extends React.Component {
     const collapseIcon = `fas fa-chevron-${this.state.isOpen ? 'up' : 'down'}`;
 
     return (
-      <section className={ `collapse${this.state.isOpen ? ' is-open' : ' is-close'}` }>
-        <button className='collapse-title' onClick= {this.updateIsOpen }>
-          <span>{ this.props.title }</span>
-          <span className={ collapseIcon }></span>
-        </button>
-        <ul className={`collapse-text ${this.state.isOpen ? 'is-open' : 'is-close'}`}>
-          {this.props.textArray.map((item, index) => (
-            <li key={`item-${index}`}>{item}</li>
-          ))}
-        </ul>
+      <section className='wrappercollapse'>
+        <div className={ `collapse${this.state.isOpen ? ' is-open' : ' is-close'}` }>
+          <button className='collapse-title' onClick= {this.updateIsOpen }>
+            <span>{ this.props.title }</span>
+            <span className={ collapseIcon }></span>
+          </button>
+          <ul className={`collapse-text ${this.state.isOpen ? 'is-open' : 'is-close'}`}>
+            {this.props.textArray.map((item, index) => (
+              <li key={`item-${index}`}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </section>
     )
   }

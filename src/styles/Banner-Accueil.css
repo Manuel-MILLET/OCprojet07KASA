@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 22 novembre 19h00
+    par Manuel MILLET 24 novembre 19h00
 */
 
 .BannerHomeWrapper {
@@ -10,21 +10,23 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    max-width: 1920px;
-    width: 100%;
+    max-width: 1440px;
     height: 250px;
-    margin-bottom: 50px;  
+    margin: 0 40px 50px 40px;  
 }
 
 .HomeSlogan {
     position: absolute;
-    top: 30%;
+    top: 40%;
     color: var(--white);
     background-color: transparent;
     text-align: center;
     font-family: 'Montserrat';
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 500;
+    line-height: 100%;
+    margin: 0;
+    padding-right: 30px;
     width: 100%;
 }
 
@@ -32,8 +34,36 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0 ;
+    margin: 0;
     width: 100%;
-    height: 250px;
+    height: 100%;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .HomeSlogan {
+        text-align: left;
+        font-size: 35px;
+        margin-left: 50px;
+        padding-right: 130px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .BannerHomeWrapper {
+        width: 90%;
+        height: 111px;
+    }
+
+    .HomeSlogan {
+        top: 30%;
+        font-size: 24px;
+        padding-right: 120px;
+    }
+
+    .IllustrationBannerAccueil {
+        width: 100%;
+        height: 100%;
+    }    
 }

@@ -1,6 +1,6 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 22 novembre 19h00
+    par Manuel MILLET 24 novembre 19h00
 
 PAGE ERROR 404 page non trouvée
 */
@@ -12,7 +12,7 @@ function PageError() {
     <main>
       <section className='ErrorWrapper'>
           <h6>404</h6>
-          <p>Oups !... La page que vous demandez n'existe pas.</p>
+          <p>Oups ! La page que vous demandez n'existe pas.</p>
           <Link className='RetourHome' to="/">Retourner sur la page d'accueil</Link>
       </section>
     </main>
