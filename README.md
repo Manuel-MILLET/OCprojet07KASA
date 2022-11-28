@@ -2,7 +2,9 @@
 
 par Manuel MILLET novembre 2022
 
-code source du projet OpenClassrooms n°07 "Développez une application web avec REACT et React Router" du parcours "Développeur web". 
+![Logo](./src/assets/Agence_KASA.png "Agence immobilière KASA")
+
+code source du projet OpenClassrooms n°07 "Créez une application web de location immobilière KASA avec React" du parcours "Développeur web". 
 
 # Getting Started with Create React App
 
