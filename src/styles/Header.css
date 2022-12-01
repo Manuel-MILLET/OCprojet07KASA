@@ -3,6 +3,19 @@
     par Manuel MILLET 24 novembre 19h00
 */
 
+.HeaderWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 200px);
+    max-width: 1240px;
+    margin: 40px auto;
+    padding: 0;
+}
+
 nav {
     position: relative;
     display: flex;
@@ -10,15 +23,6 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.HeaderContainer{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 7%;
-    padding: 0;
 }
 
 .HomeLogo {
@@ -38,11 +42,33 @@ nav {
     text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+    .HomeLogo {
+        width: 178px;
+        height: 58px;
+    }
+
+    .StyleLink {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        width: 220px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .HeaderWrapper {
+        width: calc(100% - 40px);
+        max-width: 335px;
+        margin: 20px auto;
+        padding: 0;
+    }
     .HomeLogo {
         width: 145px;
         height: 47px;
-        margin-right: 30px;
     }
 
     .StyleLink {
@@ -52,6 +78,6 @@ nav {
     }
 
     nav {
-        width: 145px;
+        width: 140px;
     }
 }

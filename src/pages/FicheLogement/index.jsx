@@ -21,8 +21,8 @@ function FicheLogement () {
 
     return (
         <main>
-            <Carousel slides={ pictures } />
             <section>
+            <Carousel slides={ pictures } />
                 <div className='block-primary'>
                     <div className='block-info'>{/*  block information */}
                         <h1 className='titreAppartement'>{ title }</h1>

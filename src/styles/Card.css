@@ -3,7 +3,6 @@
     par Manuel MILLET 24 novembre 19h00
 */
 
-
 .CardContainer {
     position: relative;
     display: flex;
@@ -38,21 +37,19 @@
 
 .TitreLocation {
     position: absolute;
-    top: 260px;
     left: 0;
+    bottom: 0;
     color: var(--white);
     font-family: 'Montserrat';
     font-size: 18px;
     text-align: start;
     font-weight:500;
-    line-height: 142.6%;
+    line-height: 26px;
     margin: 15px 20px;
 }
 
 @media screen and (max-width: 768px) {
     .CardContainer {
-        flex-wrap: wrap;
-        justify-content: center;
         width: 335px;
         height: 255px;
     }

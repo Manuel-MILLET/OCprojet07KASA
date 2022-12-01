@@ -5,9 +5,10 @@
 
 .tag-box {
     display: block;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     padding: 0;
-    width: 215px
+    width: 200px;
+    height: 65px;
 }
 
 .tag-text {
@@ -17,9 +18,33 @@
     font-style: normal;
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 26px;
     text-align: center;
     margin: 0;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .tag-box {
+        width: 250px;
+        height: 50px;
+    }
+
+    .tag-text {
+        line-height: 22px;
+        font-size: 14px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .tag-box {
+        width: 180px;
+        height: 60px;
+    }
+
+    .tag-text {
+        line-height: 19px;
+        font-size: 13px;
+    }    
 }

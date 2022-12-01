@@ -18,9 +18,19 @@
     background-color: var(--greyhyperlight);
 }
 
+@media screen and (max-width: 992px) {
+    .Gallery-wrapper {
+    background-color: var(--white);
+    margin: 30px 0;
+    padding: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .Gallery-wrapper {
         flex-direction: column;
         background-color: var(--white);
+        margin: 10px 0;
+        padding: 0;
     }
 }
