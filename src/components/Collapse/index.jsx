@@ -1,9 +1,8 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 24 novembre 19h00
+    par Manuel MILLET 10 décembre 19h00
+    Composant Collapse
 */
-// Collapse
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../../styles/Collapse.css'

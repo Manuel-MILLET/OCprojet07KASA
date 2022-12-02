@@ -50,7 +50,7 @@
 @media screen and (max-width: 992px) {
     .BannerWrapper {
         width: calc(100% - 40px);
-        height: 111px;
+        height: 223px;
     }
 
     .Slogan {
@@ -84,19 +84,3 @@
         height: 100%;
     }    
 }
-
-/*
-@media screen and (max-width: 992px) {
-    .BannerWrapper {
-        width: 90%;
-        height: 100%;
-        margin: 20px auto;
-    }
-
-@media screen and (max-width: 768px) {
-    .BannerWrapper {
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
-    }
-*/

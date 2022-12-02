@@ -14,7 +14,7 @@
 
 .collapse {
   width: 70%;
-  margin: 40px;
+  margin: 15px 40px;
 }
   
 .collapse-title {
@@ -81,7 +81,7 @@
 @media screen and (max-width: 768px) {
   .collapse {
     width: 90%;
-    margin: 20px;
+    margin: 10px 20px;
   }
 
   .collapse-title {

@@ -1,8 +1,8 @@
 /*  Projet OpenClassrooms n°07
     Agence immobilière KASA
-    par Manuel MILLET 24 novembre 19h00
+    par Manuel MILLET 10 décembre 19h00
+    PAGE FICHE LOGEMENT
 */
-//PAGE FICHE LOGEMENT
 
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -22,11 +22,11 @@ function FicheLogement () {
     return (
         <main>
             <section>
-            <Carousel slides={ pictures } />
+                <Carousel slides={ pictures } />
                 <div className='block-primary'>
                     <div className='block-info'>{/*  block information */}
                         <h1 className='titreAppartement'>{ title }</h1>
-                        <p className='location'>{ location }</p>
+                            <p className='location'>{ location }</p>
                         <div className='tags-info'>
                             { product.tags.map((tag, index) => (
                             <Tags key={ index } getTag={ tag }/>
@@ -38,7 +38,7 @@ function FicheLogement () {
                         <Rating rating={ rating }/>
                     </div>
                 </div>
-                <div className='block-secondary'>{/* block dropdows description et &quipements  */}
+                <div className='block-secondary'>{/* block dropdows description et &Equipements  */}
                     <div className='block-description-equipement'>           
                         <Collapse title='Description' textArray={ [ description ] } />
                     </div> 
