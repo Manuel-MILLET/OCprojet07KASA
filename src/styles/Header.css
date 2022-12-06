@@ -43,6 +43,12 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
+    .HeaderWrapper {
+        width: calc(100% - 120px);
+        margin: 20px auto;
+        padding: 0;
+    }
+
     .HomeLogo {
         width: 178px;
         height: 58px;
@@ -62,7 +68,6 @@ nav {
 @media screen and (max-width: 768px) {
     .HeaderWrapper {
         width: calc(100% - 40px);
-        max-width: 335px;
         margin: 20px auto;
         padding: 0;
     }

@@ -8,6 +8,8 @@ import Banner from '../../components/Banner'
 import AproposIllustration from '../../assets/apropos.png'
 import Collapse from '../../components/Collapse'
 import ABOUT_EXPRESSIONS from '../../datas/Expressions'
+import '../../styles/Apropos/banner.css'
+
 
 function Apropos() {
     const data = ABOUT_EXPRESSIONS
@@ -16,10 +18,11 @@ function Apropos() {
 
     return (
         <main>
-            <Banner bannerImage={ AproposIllustration } 
-                slogan={ slogan } 
-                textAlt={ textAlt } />
-
+            <div className='apropos-banner-wrapper'>
+                <Banner bannerImage={ AproposIllustration } 
+                    slogan={ slogan } 
+                    textAlt={ textAlt } />
+            </div>
             {data.map(({ title, text }) => (
                 <Collapse key={`about-${title}`} title={title} textArray={[text]} />
             ))}
@@ -28,3 +31,29 @@ function Apropos() {
 }
    
 export default Apropos
+
+
+/*
+import styled from 'styled-components'
+
+            <AProposBannerWrapper>
+
+            </AProposBannerWrapper>
+
+
+const AProposBannerWrapper = styled.div`
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
+width: calc(100% - 200px);
+max-width: 1240px;
+height: 223px;
+margin: 40px auto;
+padding: 0;
+`
+
+
+*/

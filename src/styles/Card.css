@@ -2,18 +2,19 @@
     Agence immobilière KASA
     par Manuel MILLET 24 novembre 19h00
 */
-
+article {
+    flex: 1 1 30%;
+}
 .CardContainer {
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 340px;
-    height: 340px;
     border-radius: 15px;
     margin: 10px;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 
 .CardContainer:hover {

@@ -1,0 +1,30 @@
+/*  Projet OpenClassrooms n°07
+    Agence immobilière KASA
+    par Manuel MILLET 10 décembre 19h00
+*/
+
+.apropos-banner-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: calc(100% - 200px);
+    max-width: 1240px;
+    height: 223px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .apropos-banner-wrapper {
+        width: calc(100% - 100px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apropos-banner-wrapper {
+        width: calc(100% - 40px);
+    }
+}

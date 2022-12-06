@@ -6,8 +6,9 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import GalleryAppartments from '../../components/GalleryAppartments'
-import HomeIllustration from '../../assets/banner-header-sombre.png'
+import HomeIllustration from '../../assets/header.png'
 import citation from '../../datas/ListeExpressions'
+import '../../styles/Accueil/banner.css'
 
 function Accueil() {
     const slogan = citation.slogan
@@ -15,9 +16,12 @@ function Accueil() {
 
     return (
         <main>
-            <Banner bannerImage={ HomeIllustration } 
+            <div className='home-banner-wrapper'>
+                <div className='home-banner-darken'></div>
+                <Banner bannerImage={ HomeIllustration } 
                     slogan={ slogan } 
                     textAlt={ textAlt }/>
+            </div>
             <GalleryAppartments />
         </main>
     )

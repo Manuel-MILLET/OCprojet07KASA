@@ -31,6 +31,7 @@
 .Slogan {
     position: absolute;
     top: 40%;
+    left: 0;
     color: var(--white);
     background-color: transparent;
     text-align: center;
@@ -50,7 +51,7 @@
 @media screen and (max-width: 992px) {
     .BannerWrapper {
         width: calc(100% - 40px);
-        height: 223px;
+        height: 100%;
     }
 
     .Slogan {
@@ -69,7 +70,7 @@
 @media screen and (max-width: 768px) {
     .BannerWrapper {
         width: calc(100% - 40px);
-        height: 111px;
+        height: 100%;
         margin: 0;
     }
 

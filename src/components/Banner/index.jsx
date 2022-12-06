@@ -6,7 +6,7 @@ import '../../styles/Banner.css'
 
 function Banner ({ bannerImage, slogan, textAlt}) {
     return (
-        <div className='BannerWrapper'>
+        <div>
             <img className='IllustrationBanner' 
                 src={ bannerImage }
                 alt={ textAlt } />

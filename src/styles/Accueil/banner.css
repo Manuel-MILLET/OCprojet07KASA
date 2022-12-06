@@ -1,0 +1,35 @@
+.home-banner-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: calc(100% - 200px);
+    max-width: 1240px;
+    height: 223px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.home-banner-wrapper .home-banner-darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+    background: #000000;
+    opacity: 0.3;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.home-banner-wrapper .Slogan {
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .home-banner-wrapper {
+        width: calc(100% - 40px);
+        height: 110px;
+    }
+}
